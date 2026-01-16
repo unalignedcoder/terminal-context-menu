@@ -5,8 +5,7 @@ The context menu is loaded when the user right-clicks the folder or the folder b
 
 <img width="717" height="202" alt="image" src="https://github.com/user-attachments/assets/16781e73-51d2-4bf0-bdc7-44c64d81f439" />
 
-
-These console commands open at the path, within <ins>Windows Terminal dedicated profiles</ins>.
+<sup>These context menu commands open at the path, within <ins>Windows Terminal dedicated profiles</ins>.</sup>
 
 The commands are designed to reuse existing Terminal windows, adding new tabs as needed.
 
@@ -29,3 +28,5 @@ The reg file assumes you have [Windows Terminal](https://github.com/microsoft/te
 <img width="604" height="280" alt="image" src="https://github.com/user-attachments/assets/fc3ef46c-1f5d-4c53-bda3-036827f151f1" />
 
 You can of course modify the reg file to suit the Windows Terminal profiles you use.
+
+The reg file includes comments to identify the relevamt parts.
