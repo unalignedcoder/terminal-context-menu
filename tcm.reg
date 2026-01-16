@@ -6,7 +6,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu]
 "MUIVerb"="Terminal"
-"Icon"="C:\\Windows\\System32\\cmd.exe"
+; Modify here the path to the main Terminal icon, next to the submenu
+"Icon"="B:\\scripts\\terminal-context-menu\terminal.ico"
 "SubCommands"=""
 
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell]
@@ -30,7 +31,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\03_cmd_admin]
 @="Command Prompt (admin)"
 ; Modify here the path to the custom admin icon
-"Icon"="B:\\stuff\\icone\\cmd-admin.ico"
+"Icon"="B:\\scripts\\terminal-context-menu\\cmd-admin.ico"
 "HasLUAShield"=""
 
 ; Modify here the name of the profile in Windows Terminal
@@ -40,23 +41,21 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\04_pwsh_admin]
 @="Powershell (admin)"
 ; Modify here the path to the custom admin icon
-"Icon"="B:\\stuff\\icone\\windows-powershell-admin.ico"
+"Icon"="B:\\scripts\\terminal-context-menu\\windows-powershell-admin.ico"
 "HasLUAShield"=""
 
 ; Modify here the name of the profile in Windows Terminal
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\04_pwsh_admin\command]
 @="wt.exe -w 0 nt -p \"Windows PowerShell (admin)\" -d \"%1\""
 
-
 ; ====================================================================
 ; 2. Background Context Menu (Right-click empty space in a folder)
 ; ====================================================================
 
-Windows Registry Editor Version 5.00
-
 [HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu]
 "MUIVerb"="Terminal"
-"Icon"="B:\\stuff\\icone\\terminal.ico"
+; Modify here the path to the main Terminal icon, next to the submenu
+"Icon"="B:\\scripts\\terminal-context-menu\terminal.ico"
 "SubCommands"=""
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell]
@@ -80,7 +79,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\03_cmd_admin]
 @="Command Prompt (admin)"
 ; Modify here the path to the custom admin icon
-"Icon"="B:\\stuff\\icone\\cmd-admin.ico"
+"Icon"="B:\\scripts\\terminal-context-menu\\cmd-admin.ico"
 "HasLUAShield"=""
 
 ; Modify here the name of the profile in Windows Terminal
@@ -90,7 +89,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\04_pwsh_admin]
 @="Powershell (admin)"
 ; Modify here the path to the custom admin icon
-"Icon"="B:\\stuff\\icone\\windows-powershell-admin.ico"
+"Icon"="B:\\scripts\\terminal-context-menu\\windows-powershell-admin.ico"
 "HasLUAShield"=""
 
 ; Modify here the name of the profile in Windows Terminal
