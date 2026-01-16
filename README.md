@@ -1,9 +1,6 @@
 # terminal-context-menu
-<<<<<<< HEAD
+
 I am sharing here `tcm.reg`, a registry file which creates a <ins>directory context menu</ins> for `cmd` and `powershell` commands, to be opened **within Windows Terminal**.
-=======
-I am sharing here `tcm.reg`, a registry file which creates a <ins>directory context menu</ins> for `cmd` and `powershell`, to be opened at path **within Windows Terminal**.
->>>>>>> a5fe4b642b67c8a990da3c71d1e39dbd0bb4f759
 
 The context menu is shown when the user right-clicks on a folder or on the folder background.
 
@@ -11,11 +8,7 @@ The context menu is shown when the user right-clicks on a folder or on the folde
 
 <sup>These context menu commands open at the Folder path, within <ins>Windows Terminal dedicated profiles</ins>.</sup>
 
-<<<<<<< HEAD
 The commands are designed to <ins>reuse existing Terminal windows</ins>, adding new tabs as needed, to avoid clutter (though by design admin and non-admin profiles will always belong to separate Terminal windows.)
-=======
-The commands are designed to reuse existing Terminal windows, adding new tabs as needed, to avoid clutter (though by design admin and non-admin profiles will always belong to separate Terminal windows.)
->>>>>>> a5fe4b642b67c8a990da3c71d1e39dbd0bb4f759
 
 **This is NOT meant to open PowerShell or CommandPrompt directly, but only within Windows Terminal**.
 
