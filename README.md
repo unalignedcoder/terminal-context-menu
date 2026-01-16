@@ -1,9 +1,17 @@
 # terminal-context-menu
-I am sharing here a `.reg` file i use to create a Directory context menu for `cmd` and `powershell`, within Windows Terminal dedicated profiles.
+I am sharing here `tcm.reg`, a registry file I've used to create a directory (right-click and background) context menu for `cmd` and `powershell`.
+
+These console commands open at the path, within Windows Terminal dedicated profiles.
 
 <img width="717" height="202" alt="image" src="https://github.com/user-attachments/assets/16781e73-51d2-4bf0-bdc7-44c64d81f439" />
 
-Just double click on it to add it to Windows.
+The commands are designed to reuse existing Terminal windows, adding new tabs as needed.
+
+## Installation
+
+Just double click on `tcm.reg` to add the context menu to Windows.
+
+## Requirements
 
 The reg file assumes you have [Windows Terminal](https://github.com/microsoft/terminal) installed, with these profiles:
 - Command Prompt
