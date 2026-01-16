@@ -1,5 +1,9 @@
 Windows Registry Editor Version 5.00
 
+; ====================================================================
+; 1. Folder Context Menu (Right-click on a folder icon)
+; ====================================================================
+
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu]
 "MUIVerb"="Terminal"
 "Icon"="C:\\Windows\\System32\\cmd.exe"
@@ -8,35 +12,88 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell]
 
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\01_cmd]
-@="as cmd"
+@="Command Prompt"
 "Icon"="C:\\Windows\\System32\\cmd.exe"
 
 ; Modify here the name of the profile in Windows Terminal
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\01_cmd\command]
-@="wt.exe -p \"Command Prompt\" -d \"%1\""
+@="wt.exe -w 0 nt -p \"Command Prompt\" -d \"%1\""
 
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\02_pwsh]
-@="as powershell"
+@="Powershell"
 "Icon"="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 
 ; Modify here the name of the profile in Windows Terminal
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\02_pwsh\command]
-@="wt.exe -p \"Windows PowerShell\" -d \"%1\""
+@="wt.exe -w 0 nt -p \"Windows PowerShell\" -d \"%1\""
 
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\03_cmd_admin]
-@="as admin cmd"
-"Icon"="C:\\Windows\\System32\\cmd.exe"
+@="Command Prompt (admin)"
+; Modify here the path to the custom admin icon
+"Icon"="B:\\stuff\\icone\\cmd-admin.ico"
 "HasLUAShield"=""
 
-; Use the name of the profile in Windows Terminal
+; Modify here the name of the profile in Windows Terminal
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\03_cmd_admin\command]
-@="wt.exe -p \"Command Prompt (admin)\" -d \"%1\""
+@="wt.exe -w 0 nt -p \"Command Prompt (admin)\" -d \"%1\""
 
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\04_pwsh_admin]
-@="as admin powershell"
-"Icon"="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+@="Powershell (admin)"
+; Modify here the path to the custom admin icon
+"Icon"="B:\\stuff\\icone\\windows-powershell-admin.ico"
 "HasLUAShield"=""
 
 ; Modify here the name of the profile in Windows Terminal
 [HKEY_CLASSES_ROOT\Directory\shell\WT_Menu\shell\04_pwsh_admin\command]
-@="wt.exe -p \"Windows PowerShell (admin)\" -d \"%1\""
+@="wt.exe -w 0 nt -p \"Windows PowerShell (admin)\" -d \"%1\""
+
+
+; ====================================================================
+; 2. Background Context Menu (Right-click empty space in a folder)
+; ====================================================================
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu]
+"MUIVerb"="Terminal"
+"Icon"="B:\\stuff\\icone\\terminal.ico"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell]
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\01_cmd]
+@="Command Prompt"
+"Icon"="C:\\Windows\\System32\\cmd.exe"
+
+; Modify here the name of the profile in Windows Terminal
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\01_cmd\command]
+@="wt.exe -p \"Command Prompt\" -d \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\02_pwsh]
+@="Powershell"
+"Icon"="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+
+; Modify here the name of the profile in Windows Terminal
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\02_pwsh\command]
+@="wt.exe -p \"Windows PowerShell\" -d \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\03_cmd_admin]
+@="Command Prompt (admin)"
+; Modify here the path to the custom admin icon
+"Icon"="B:\\stuff\\icone\\cmd-admin.ico"
+"HasLUAShield"=""
+
+; Modify here the name of the profile in Windows Terminal
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\03_cmd_admin\command]
+@="wt.exe -p \"Command Prompt (admin)\" -d \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\04_pwsh_admin]
+@="Powershell (admin)"
+; Modify here the path to the custom admin icon
+"Icon"="B:\\stuff\\icone\\windows-powershell-admin.ico"
+"HasLUAShield"=""
+
+; Modify here the name of the profile in Windows Terminal
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WT_Menu\shell\04_pwsh_admin\command]
+@="wt.exe -p \"Windows PowerShell (admin)\" -d \"%V\""
+aa
