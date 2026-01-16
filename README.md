@@ -30,3 +30,6 @@ The reg file assumes you have [Windows Terminal](https://github.com/microsoft/te
 You can of course modify the reg file to suit the Windows Terminal profiles you use.
 
 The reg file includes comments to identify the relevamt parts.
+
+## Uninstallation
+Just double click on `remove-tcm.reg` to uninstall this context menu.
