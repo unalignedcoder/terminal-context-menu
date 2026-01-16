@@ -10,6 +10,8 @@ The context menu is shown when the user right-clicks on a folder or on the folde
 
 The commands are designed to <ins>reuse existing Terminal windows</ins>, adding new tabs as needed, to avoid clutter (though by design admin and non-admin profiles will always belong to separate Terminal windows.)
 
+Notice that it is the Windows Terminal profiles themselves that indicate whether to use Administrator privileges with a given command, not the Registry entries.
+
 **This is NOT meant to open PowerShell or CommandPrompt directly, but only within Windows Terminal**.
 
 ## Installation
@@ -20,7 +22,7 @@ Change the path to the custom icons if you want to use your own, or the ones pro
 
 ## Requirements
 
-The reg file assumes you have [Windows Terminal](https://github.com/microsoft/terminal) installed, with these profiles:
+The reg file assumes you have [Windows Terminal](https://github.com/microsoft/terminal) installed, and that you have configured admin and non-admin profiles:
 - Command Prompt
 - Windows PowerShell
 - Command Prompt (admin)
