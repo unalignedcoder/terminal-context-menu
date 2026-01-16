@@ -34,7 +34,7 @@ You can of course modify the `.reg` file to suit the Windows Terminal profiles y
 
 The `.reg` file includes comments to identify the relevant parts:
 
-<img width="889" height="411" alt="image" src="https://github.com/user-attachments/assets/be7f0f2d-6c99-4ee1-9716-4fc790b3df09" />
+<img width="904" height="271" alt="image" src="https://github.com/user-attachments/assets/aa5dbe5c-a6a1-4cc3-b87d-1494b8c43aba" />
 
 ## Uninstallation
 Just double click on `remove-tcm.reg` to uninstall this context menu.
