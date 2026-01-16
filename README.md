@@ -4,8 +4,8 @@ I am sharing here `tcm.reg`, a registry file I've used to create a <ins>director
 The context menu is loaded when the user right-clicks the folder or the folder background.
 
 <img width="717" height="202" alt="image" src="https://github.com/user-attachments/assets/16781e73-51d2-4bf0-bdc7-44c64d81f439" />
-
-These console commands open at the path, within Windows Terminal dedicated profiles.
+<br/>
+These console commands open at the path, within <ins>Windows Terminal dedicated profiles</ins>.
 
 The commands are designed to reuse existing Terminal windows, adding new tabs as needed.
 
