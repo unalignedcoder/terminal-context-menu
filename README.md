@@ -10,7 +10,7 @@ The context menu is shown when the user right-clicks on a folder or on the folde
 
 The commands are designed to <ins>reuse existing Terminal windows</ins>, adding new tabs as needed, to avoid clutter (though by design admin and non-admin profiles will always belong to separate Terminal windows.)
 
-Notice that it is the Windows Terminal profiles themselves that indicate whether to use Administrator privileges with a given command, not the Registry entries.
+Notice that the Windows Terminal profiles themselves indicate whether to use Administrator privileges with a given command, not the Registry entries.
 
 **This is NOT meant to open PowerShell or CommandPrompt directly, but only within Windows Terminal**.
 
